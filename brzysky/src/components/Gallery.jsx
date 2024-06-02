@@ -61,10 +61,10 @@ const Gallery = () => {
     ]
 
   return (
-    <div className=' bg-white' id='gallery'>
+    <div className=' bg-gradient-to-t from-white to-transparent' id='gallery'>
         <h1 className=' text-[#b78661] text-center text-5xl font-inter py-5 mt-5'>JAK ODPOWIEDNIO ROBIĆ ZDJĘCIA? </h1>
         <div className=''>
-            <div className=' bg-white px-2 py-5'>
+            <div className=' px-2 py-5'>
                 <h1 className=' text-7xl font-inter font-[200] text-center py-2'>ŹLE</h1>
                     <Carousel
                     swipeable={true}
@@ -76,10 +76,11 @@ const Gallery = () => {
                     autoPlaySpeed={2000}
                     transitionDuration={500}
                     containerClass="carousel-container"
+                    className='z-[98]'
                     >
                         {badPhotos.map((badPhoto, i)=>{
                             return(
-                                <div>
+                                <div key={i}>
                                     <img src={badPhoto.image} alt="badPhoto" className=' aspect-[9/11] sm:aspect-square lg:aspect-[12/9]  object-cover p-1 my-4 rounded-3xl' />
                                 </div>
                             )
@@ -87,7 +88,7 @@ const Gallery = () => {
                     </Carousel>
             </div>
 
-            <div className=' bg-[#d6d6d6] px-2 py-5'>
+            <div className=' bg-[#e7e7e7] px-2 py-5'>
                 <h1 className=' text-7xl font-inter font-[200] text-center py-2'>DOBRZE</h1>
                     <Carousel
                     swipeable={true}
@@ -99,11 +100,12 @@ const Gallery = () => {
                     autoPlaySpeed={2000}
                     transitionDuration={500}
                     containerClass="carousel-container"
+                    className='z-[98]'
                     >
                         {goodPhotos.map((badPhoto, i)=>{
                             return(
-                                <div>
-                                    <img src={badPhoto.image} alt="badPhoto" className=' aspect-[9/11] sm:aspect-square lg:aspect-[12/9]  object-cover p-1 my-4 rounded-3xl' />
+                                <div key={i}>
+                                    <img src={badPhoto.image} alt={`badPhoto ${i+1}`} className=' aspect-[9/11] sm:aspect-square lg:aspect-[12/9]  object-cover p-1 my-4 rounded-3xl' />
                                 </div>
                             )
                         })}

@@ -25,7 +25,7 @@ const Footer = () => {
   return (
     <div>
     <div className="pt-10 pb-3 bg-zinc-950">
-      <h1 className=' uppercase text-6xl font-mont text-white/10 text-center mb-10'>badź na bieżąco</h1>
+      <h1 className=' uppercase text-6xl font-mont text-white/10 text-center mb-10'>bądź na bieżąco</h1>
       <div className=" grid lg:grid-cols-3 space-y-7 lg:space-y-0">
           <div className=' w-fit mx-auto'>
             <img src={logo} alt="logo" className=' w-[200px]'/>
