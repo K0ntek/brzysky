@@ -18,10 +18,10 @@ function App() {
     <div>
       <Navbar/>
       <Header/>
-        <div className=' grid lg:grid-cols-2 lg:gap-[1%] lg:w-[98%] mx-auto'>
+        {/* <div className=' grid lg:grid-cols-2 lg:gap-[1%] lg:w-[98%] mx-auto'> */}
           <About/>
-          <Offer/>
-        </div>
+          {/* <Offer/> */}
+        {/* </div> */}
       <Gallery/>
         <div id="contact">
           <Contact/>

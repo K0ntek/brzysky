@@ -47,7 +47,7 @@ const Navbar = () => {
     }
 
     const hideNavbar=()=>{
-            gsap.to('.navigation', {top: '-100%', duration:1.5})
+            gsap.to('.navigation', {top: '-450'})
             gsap.to('.toggleButton', {display:'block', duration:0, delay:.2})
     }
 

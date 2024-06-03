@@ -27,9 +27,9 @@ const Header = () => {
             <div className='relative top-[50%] translate-y-[-50%]'>
                 <div className=' bg-black w-1/4 h-[5px] my-1 mx-auto'></div>
                <div className=' flex justify-center'>
-                    <div className=' bg-black w-[2px] h-[100px] mx-2 mt-[250px]'></div>
+                    <div className=' bg-black w-[2px] h-[60px] sm:h-[75px] md:h-[100px] mx-2 mt-[100px] sm:mt-[250px]'></div>
                     <div className='w-3/5 aspect-square rounded-[50px] bg-zinc-950'></div>
-                    <div className=' bg-black w-[2px] h-[100px] mx-2 mt-[150px]'></div>
+                    <div className=' bg-black w-[2px] h-[60px] sm:h-[75px] md:h-[100px] mx-2 mt-[75px] sm:mt-[150px]'></div>
                </div>
                 <div className=' bg-black w-1/4 h-[5px] my-1 mx-auto'></div>
             </div>
