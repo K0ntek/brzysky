@@ -81,7 +81,9 @@ const Gallery = () => {
                         {badPhotos.map((badPhoto, i)=>{
                             return(
                                 <div key={i}>
-                                    <img src={badPhoto.image} alt="badPhoto" className=' aspect-[9/11] sm:aspect-square lg:aspect-[12/9]  object-cover p-1 my-4 rounded-3xl' />
+                                    <div>
+                                        <img src={badPhoto.image} alt="badPhoto" className=' aspect-[9/11] sm:aspect-square lg:aspect-[12/9] object-cover p-1 my-4 rounded-3xl' />
+                                    </div>
                                 </div>
                             )
                         })}

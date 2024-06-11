@@ -6,7 +6,7 @@ const About = () => {
     <div>
       <div className=' w-full mx-auto bg-zinc-950 py-10 mt-8' id='about'>
           <div className='w-5/6 py-7 mx-auto rounded-[40px] grid lg:grid-cols-2'>
-              <div>
+              <div className='hidden sm:block'>
                 <h1 className=' text-8xl font-mont font-[500] text-center text-transparent bg-clip-text bg-gradient-to-r from-[silver] to-[white] my-8 sticky top-[50%] translate-y-[-50%]'>O MNIE</h1>
               </div>
               <div>

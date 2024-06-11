@@ -63,7 +63,7 @@ const Navbar = () => {
   return (
     <div className=' w-full bg-[rgba(253,253,253)] h-[70px] lg:flex py-4 fixed top-0 z-[99]'>
         <div className="absolute right-3 text-4xl hover:text-[#8d4929] toggleButton lg:hidden" onClick={toggleNavbar}><RiMenu4Line /></div>
-            <Link to='header'>
+            <Link to='header' smooth={true}>
                 <div className=' absolute lg:left-8 lg:translate-x-0 left-[50%] translate-x-[-50%]'>
                     <img src={logo} alt='logo' className='w-[180px] relative' />
                 </div>

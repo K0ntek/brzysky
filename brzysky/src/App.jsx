@@ -24,6 +24,7 @@ function App() {
         {/* </div> */}
       <Gallery/>
         <div id="contact">
+        {/* className=' grid md:grid-cols-2' */}
           <Contact/>
           <Report/>
         </div>

@@ -25,7 +25,7 @@ const Footer = () => {
   return (
     <div>
     <div className="pt-10 pb-3 bg-zinc-950">
-      <h1 className=' uppercase text-6xl font-mont text-white/10 text-center mb-10'>bądź na bieżąco</h1>
+      <h1 className=' uppercase text-6xl font-mont text-white/20 text-center mb-10'>bądź na bieżąco</h1>
       <div className=" grid lg:grid-cols-3 space-y-7 lg:space-y-0">
           <div className=' w-fit mx-auto'>
             <img src={logo} alt="logo" className=' w-[200px]'/>
@@ -53,8 +53,11 @@ const Footer = () => {
 
           <div className=' mx-auto'>
             <h1 className=' text-center font-mont text-3xl font-[200] text-[silver]'>BLOG</h1>
-            <div className=' w-2/3 mx-auto'>
-            <a href="https://homesell.pl/2023/03/dlaczego-warto-korzystac-z-uslugi-biura-nieruchomosci/" className=' text-white font-mont'>Dlaczego warto korzystać z usługi biura nieruchomości?</a>
+            <div className=' w-fit'>
+              <div className=' w-2/3 mx-auto'>
+              <a href="https://homesell.pl/2023/03/dlaczego-warto-korzystac-z-uslugi-biura-nieruchomosci/" className=' text-white font-mont'>Dlaczego warto korzystać z usługi biura nieruchomości?</a>
+              </div>
+              <div className="w-0 hover:w-full h-[2px] bg-white"></div>
             </div>
           </div>
       </div>
