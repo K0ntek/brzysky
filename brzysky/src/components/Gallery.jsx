@@ -61,19 +61,19 @@ const Gallery = () => {
     ]
 
   return (
-    <div className=' bg-gradient-to-t from-white to-transparent' id='gallery'>
-        <h1 className=' text-[#b78661] text-center text-5xl font-inter py-5 mt-5'>JAK ODPOWIEDNIO ROBIĆ ZDJĘCIA? </h1>
+    <div className=' pt-10 bg-gradient-to-t' id='gallery'>
+        <h1 className=' text-transparent bg-clip-text bg-gradient-to-r from-[#000000] to-[#313131] text-lg uppercase text-center font-inter  mt-5'>JAK ODPOWIEDNIO ROBIĆ ZDJĘCIA? </h1>
         <div className=''>
             <div className=' px-2 py-5'>
-                <h1 className=' text-7xl font-inter font-[200] text-center py-2'>ŹLE</h1>
+                <h1 className=' text-3xl font-inter font-[500] py-2 ml-10'>ŹLE</h1>
                     <Carousel
                     swipeable={true}
                     draggable={true}
-                    showDots={true}
                     responsive={responsive}
                     ssr={true}
                     infinite={true}
-                    autoPlaySpeed={2000}
+                    autoPlay={true}
+                    autoPlaySpeed={5000}
                     transitionDuration={500}
                     containerClass="carousel-container"
                     className='z-[98]'
@@ -82,7 +82,7 @@ const Gallery = () => {
                             return(
                                 <div key={i}>
                                     <div>
-                                        <img src={badPhoto.image} alt="badPhoto" className=' aspect-[9/11] sm:aspect-square lg:aspect-[12/9] object-cover p-1 my-4 rounded-3xl' />
+                                        <img src={badPhoto.image} alt="badPhoto" className=' aspect-[9/11] sm:aspect-square lg:aspect-[12/9] object-cover p-1 my-4 rounded-[40px]' />
                                     </div>
                                 </div>
                             )
@@ -90,16 +90,16 @@ const Gallery = () => {
                     </Carousel>
             </div>
 
-            <div className=' bg-[#e7e7e7] px-2 py-5'>
-                <h1 className=' text-7xl font-inter font-[200] text-center py-2'>DOBRZE</h1>
+            <div className=' px-2 py-5'>
+                <h1 className=' text-3xl font-inter font-[500] py-2 ml-10'>DOBRZE</h1>
                     <Carousel
                     swipeable={true}
                     draggable={true}
-                    showDots={true}
                     responsive={responsive}
                     ssr={true}
                     infinite={true}
-                    autoPlaySpeed={2000}
+                    autoPlay={true}
+                    autoPlaySpeed={5000}
                     transitionDuration={500}
                     containerClass="carousel-container"
                     className='z-[98]'
@@ -107,7 +107,7 @@ const Gallery = () => {
                         {goodPhotos.map((badPhoto, i)=>{
                             return(
                                 <div key={i}>
-                                    <img src={badPhoto.image} alt={`badPhoto ${i+1}`} className=' aspect-[9/11] sm:aspect-square lg:aspect-[12/9]  object-cover p-1 my-4 rounded-3xl' />
+                                    <img src={badPhoto.image} alt={`badPhoto ${i+1}`} className=' aspect-[9/11] sm:aspect-square lg:aspect-[12/9]  object-cover p-1 my-4 rounded-[40px]' />
                                 </div>
                             )
                         })}

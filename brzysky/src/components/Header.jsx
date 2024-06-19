@@ -45,40 +45,21 @@ const Header = () => {
         
             gsap.fromTo('.image', {x:200, opacity:0}, {x:0, opacity:1, duration:.5, delay:.2})
             gsap.fromTo('.content', {y:200, opacity:0}, {y:0, opacity:1, duration:.5, stagger:.2})
-            gsap.fromTo('.button', {opacity:0}, {opacity:1, duration:.5, delay:1})
+            gsap.fromTo('.button', {opacity:0}, {opacity:1, duration:.5, delay:.6})
     },[])
 
   return (
-    <div className='header grid lg:grid-cols-2 min-h-screen mt-[80px] lg:mt-0' id='header'>
-        <div className=''>
-            <div className='relative top-[50%] translate-y-[-50%] image'>
-                <div className=' bg-black w-1/4 h-[5px] my-1 mx-auto imageLine'></div>
-               <div className=' flex justify-center'>
-                    <div className=' bg-black w-[2px] h-[60px] sm:h-[75px] md:h-[150px] mx-2 mt-[20%] imageVerticalLine'></div>
-                    <div className='w-3/5 aspect-square rounded-[50px] bg-zinc-950'></div>
-                    <div className=' bg-black w-[2px] h-[60px] sm:h-[75px] md:h-[150px] mx-2 mt-[10%] imageVerticalLine'></div>
-               </div>
-                <div className=' bg-black w-1/4 h-[5px] my-1 mx-auto imageLine'></div>
-            </div>
-        </div>
-        <div className=' mx-auto text-center lg:text-start'>
-            <div className=' space-y-4 relative top-[50%] translate-y-[-50%] '>
-                <h1 className=' text-7xl font-mont font-[500] content'>PIOTR BRZYSKI</h1>
-                    <div className='content'>
-                        <TypeAnimation
-                        sequence={[
-                            'AGENT NIERUCHOMOŚCI',
-                            1000,
-                        ]}
-                        wrapper="span"
-                        speed={50}
-                        cursor={false}
-                        className=' font-mont text-4xl text-[#b78661] content'
-                        />
-                    </div>
-                <p className=' text-2xl font-inter font-[500] content'>Sprzedaj ze mną swoją nieruchomość</p>
+    <div className='header grid lg:grid-cols-2 min-h-screen mt-[80px] pb-10 lg:mt-0' id='header'>
+        <div className='mx-auto text-center lg:text-start justify-center'>
+            <div className=' space-y-5 relative top-[50%] translate-y-[-50%] '>
 
-                        <div className="flex space-x-3 justify-center lg:justify-start content">
+                <p className=' text-lg font-mont tracking-widest font-[500] text-[#b78661]'>AGENT NIERUCHOMOŚCI</p>
+
+                <h1 className=' text-7xl font-mont font-[600] content'>PIOTR BRZYSKI</h1>
+
+                       <p className='content font-mont text-2xl max-w-[500px] text-justify mx-auto lg:mx-0'>Sprzedaj ze mną swoją nieruchomość i ciesz się z profesjonalnej współpracy!</p>
+
+                        <div className="flex space-x-4 justify-center lg:justify-start content">
                             {socials.map((social, i)=>{
                                 return(
                                     <div key={i}>
@@ -91,10 +72,23 @@ const Header = () => {
                         </div>
                 
                 <Link to='offer' smooth={true} spy={true}>
-                    <button className='button bg-[#b78661] text-white text-xl font-inter font-[300] px-5 py-3 mt-4 rounded-xl hover:rounded-2xl transition-all duration-150 ml-8 '>ZOBACZ OFERTĘ</button>
+                    <button className='button bg-[#b78661] text-white text-xl font-inter font-[300] px-5 py-3 mt-4 rounded-full hover:tracking-wide transition-all duration-150 ml-8 '>ZOBACZ OFERTĘ</button>
                 </Link>
             </div>
         </div>
+
+        <div className=''>
+            <div className='relative top-[50%] translate-y-[-50%] image'>
+                <div className=' bg-black w-1/4 h-[5px] my-1 mx-auto imageLine'></div>
+               <div className=' flex justify-center'>
+                    <div className=' bg-black w-[2px] h-[60px] sm:h-[75px] md:h-[150px] mx-2 mt-[20%] imageVerticalLine'></div>
+                    <div className='w-3/5 aspect-square rounded-[40px] bg-zinc-950'></div>
+                    <div className=' bg-black w-[2px] h-[60px] sm:h-[75px] md:h-[150px] mx-2 mt-[10%] imageVerticalLine'></div>
+               </div>
+                <div className=' bg-black w-1/4 h-[5px] my-1 mx-auto imageLine'></div>
+            </div>
+        </div>
+
     </div>
   )
 }

@@ -17,17 +17,21 @@ function App() {
   return (
     <div>
       <Navbar/>
-      <Header/>
-        {/* <div className=' grid lg:grid-cols-2 lg:gap-[1%] lg:w-[98%] mx-auto'> */}
-          <About/>
-          {/* <Offer/> */}
-        {/* </div> */}
-      <Gallery/>
-        <div id="contact">
+      <div className="w-[90%] mx-auto">
+        <Header/>
+          {/* <div className=' grid lg:grid-cols-2 lg:gap-[1%] lg:w-[98%] mx-auto'> */}
+            <About/>
+            {/* <Offer/> */}
+          {/* </div> */}
+        <Gallery/>
+      </div>
+
+      <div id="contact">
         {/* className=' grid md:grid-cols-2' */}
           <Contact/>
           <Report/>
-        </div>
+      </div>
+
       <Footer/>
     </div>
   )

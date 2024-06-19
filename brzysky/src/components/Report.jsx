@@ -50,10 +50,10 @@ const Report = () => {
   }
 
   return (
-    <div id='report' className='w-full py-10 bg-[#ececec] text-black'>
+    <div id='report' className='w-full py-8 bg-[#ececec] text-black'>
       {/* <p className=' font-mont text-center mb-3 text-[#b78661]'>Zgłoś nieruchomość</p> */}
       {/* <h1 className=' font-mont text-center text-5xl mb-8'>SKONTAKTUJ SIĘ ZE MNĄ!</h1> */}
-      <h1 className=' font-mont text-center text-4xl sm:text-5xl mb-8 uppercase px-10'>Zgłoś nieruchomość</h1>
+      <h1 className=' font-mont text-center text-3xl sm:text-4xl mb-8 px-10 font-[500] uppercase'>Zgłoś nieruchomość</h1>
       <div className=" max-w-[800px] mx-auto px-5">
           <form onSubmit={handleSubmit}>
               <div className='grid grid-cols-2 gap-4'>
@@ -77,7 +77,6 @@ const Report = () => {
                     </div>
           </form>
       </div>
-      <script src="https://smtpjs.com/v3/smtp.js"></script>
     </div>
   )
 }
