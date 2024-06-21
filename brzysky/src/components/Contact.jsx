@@ -9,39 +9,39 @@ const Contact = () => {
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
 
-    const handleSubmit = async (e) =>{
-      e.preventDefault();
+    //const handleSubmit = async (e) =>{
+      //e.preventDefault();
 
       //emailjs templates
-      const serviceID = 'service_ctjauxn'
-      const templateID = 'template_lls2shr'
-      const publicKey = 'OrU4sSzJwY303AR90'
+      //const serviceID = 'service_ctjauxn'
+      //const templateID = 'template_lls2shr'
+      //const publicKey = 'OrU4sSzJwY303AR90'
 
-      const data = {
-        service_id: serviceID,
-        template_id: templateID,
-        user_id: publicKey,
-        template_params: {
-          user_name: name + " " + surname,
-          user_mail: email,
-          user_phone: phone,
-          message: message,
-          to_name: 'Jakub Kontek'
-        }
-      }
+      //const data = {
+        //service_id: serviceID,
+        //template_id: templateID,
+        //user_id: publicKey,
+        //template_params: {
+          //user_name: name + " " + surname,
+          //user_mail: email,
+          //user_phone: phone,
+          //message: message,
+          //to_name: 'Jakub Kontek'
+        //}
+      //}
 
-      try{
-        const res = await axios.post('https://api.emailjs.com/api/v1.0/email/send', data);
-        console.log(res.data);
-        setName('')
-        setSurname('')
-        setPhone('')
-        setEmail('')
-        setMessage('')
-      } catch (error){
-        console.error(error)
-      }
-    }
+     // try{
+        //const res = await axios.post('https://api.emailjs.com/api/v1.0/email/send', data);
+        //console.log(res.data);
+        //setName('')
+        //setSurname('')
+        //setPhone('')
+       // setEmail('')
+        //setMessage('')
+      //} catch (error){
+        //console.error(error)
+      //}
+    //}
 
   return (
     <div className='w-full py-8 bg-[#b78661] text-white'>-
