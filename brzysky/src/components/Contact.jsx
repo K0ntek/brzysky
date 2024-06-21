@@ -48,7 +48,7 @@ const Contact = () => {
       {/* <p className=' font-mont text-center mb-3 text-[silver]'>Formularz kontaktowy</p> */}
       <h1 className=' font-mont text-center text-3xl sm:text-4xl mb-8 px-10'>SKONTAKTUJ SIĘ ZE MNĄ!</h1>
       <div className=" max-w-[800px] mx-auto px-5">
-          <form onSubmit={handleSubmit}>
+          <form>
               <div className='grid grid-cols-2 gap-4'>
                     <div className=' mx-auto w-full'> <input placeholder='IMIĘ' type="text" value={name} id="name" onChange={(e) => setName(e.target.value)} className='w-full bg-transparent border-[1px] border-white rounded-xl py-2 px-2 focus:outline-none placeholder:text-white/50' /></div>
                     <div className=' mx-auto w-full'> <input placeholder='NAZWISKO' type="text" value={surname} id="surname" onChange={(e) => setSurname(e.target.value)} className='w-full bg-transparent border-[1px] border-white rounded-xl py-2 px-2 focus:outline-none placeholder:text-white/50' /></div>
