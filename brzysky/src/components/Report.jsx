@@ -13,40 +13,6 @@ const Report = () => {
 
   const handleSubmit = async (e) =>{
     e.preventDefault();
-
-    //emailjs templates
-    const serviceID = 'service_ctjauxn'
-    const templateID = 'template_m7bb9do'
-    const publicKey = 'OrU4sSzJwY303AR90'
-
-    const data = {
-      service_id: serviceID,
-      template_id: templateID,
-      user_id: publicKey,
-      template_params: {
-        user_name: name + " " + surname,
-        user_mail: email,
-        user_phone: phone,
-        message: message,
-        location: location,
-        homeType: homeType,
-        to_name: 'Jakub Kontek'
-      }
-    }
-
-    try{
-      const res = await axios.post('https://api.emailjs.com/api/v1.0/email/send', data);
-      console.log(res.data);
-      setName('')
-      setSurname('')
-      setPhone('')
-      setEmail('')
-      setMessage('')
-      setLocation('')
-      setHomeType('')
-    } catch (error){
-      console.error(error)
-    }
   }
 
   return (
