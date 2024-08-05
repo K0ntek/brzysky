@@ -22,7 +22,7 @@ const SectionThree = () => {
                   <h2 className=' font-montserrat text-xl font-[600] tracking-tight
                                       bg-gradient-to-r from-[#cacaca] to-[#222]
                                       inline-block text-transparent bg-clip-text uppercase'>Profesjonalizm i precyzja</h2>
-                      <h1 className=' font-montserrat text-5xl font-[700] mt-1 mb-6'>Profesjonalizm i precyzja</h1>
+                      <h1 className=' font-montserrat  text-4xl sm:text-5xl font-[700] mt-1 mb-6'>Profesjonalizm i pecyzja</h1>
                       <p className=' font-inter font-[500] text-xl w-3/4 text-justify mb-8 mx-auto lg:mx-0'>
                       Profesjonalizm oznacza dla mnie nieustanne doskonalenie swoich umiejętności i poszerzanie
                        wiedzy o rynku nieruchomości. Dzięki temu mogę oferować
@@ -79,13 +79,21 @@ const SectionThree = () => {
                   </div>
               </div>
 
-              <div className=' max-w-[650px] mx-auto'>
-                  <div className=' text-center lg:text-start relative mt-10'>
+              <div>
+                  <div className=' text-center lg:text-start mt-5'>
                   <h2 className=' font-montserrat text-xl font-[600] tracking-tight
                                       bg-gradient-to-r from-[#cacaca] to-[#222]
-                                      inline-block text-transparent bg-clip-text'>SUBHEADING TEXT</h2>
-                      <h1 className=' font-montserrat text-5xl font-[700] mt-1 mb-6'>Lorem ipsum dolor sit amet.</h1>
-                      <p className=' font-inter font-[500] text-xl w-3/4 text-justify mb-8 mx-auto lg:mx-0'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis saepe voluptates numquam a qui, sit quasi iusto, magnam enim maxime accusamus voluptatum commodi quae quos doloribus harum quibusdam. Quas officiis sequi omnis, doloribus saepe illo possimus vitae eaque, autem assumenda unde recusandae sapiente, et distinctio inventore dolor reiciendis aspernatur minus.</p>
+                                      inline-block text-transparent bg-clip-text uppercase'>Profesjonalizm i precyzja</h2>
+                      <h1 className=' font-montserrat  text-4xl sm:text-5xl font-[700] mt-1 mb-6'>Profesjonalizm i pecyzja</h1>
+                      <p className=' font-inter font-[500] text-xl w-3/4 text-justify mb-8 mx-auto lg:mx-0'>
+                      Profesjonalizm oznacza dla mnie nieustanne doskonalenie swoich umiejętności i poszerzanie
+                       wiedzy o rynku nieruchomości. Dzięki temu mogę oferować
+                         usługi na najwyższym poziomie.</p>
+
+                         <p className=' font-inter font-[500] text-xl w-3/4 text-justify mb-8 mx-auto lg:mx-0'>
+                         Precyzja jest kluczowa w mojej pracy. Każdy detal ma znaczenie, dlatego dokładam wszelkich
+                       starań, aby wszystko było dopięte na ostatni guzik. Wierzę, że to właśnie precyzyjne 
+                       podejście pozwala osiągać najlepsze rezultaty i zadowolenie klientów.</p>
                   </div>
               </div>
 

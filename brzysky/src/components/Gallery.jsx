@@ -61,15 +61,15 @@ const Gallery = () => {
     ]
 
   return (
-    <div className=' bg-[#e9e9e9] mt-10 p-6 rounded-[40px] text-[#000000] shadow-[0px_0px_20px_0px] shadow-black/40' id='gallery'>
+    <div className=' bg-[#e9e9e9] mt-10 p-2 sm:p-6 rounded-[40px] text-[#000000] shadow-[0px_0px_20px_0px] shadow-black/40' id='gallery'>
         <div className="mx-auto justify-center text-center">
         <h2 className=' font-montserrat text-xl font-[600] tracking-tight
                                 bg-gradient-to-r from-[#999999] to-[#000000]
                                 inline-block text-transparent bg-clip-text uppercase'>GALERIA </h2>
-                <h1 className=' font-montserrat text-5xl font-[600] mt-1 mb-6 uppercase'>JAK ODPOWIEDNIO ROBIĆ ZDJĘCIA?</h1>
+                <h1 className=' font-montserrat text-3xl md:text-5xl font-[600] mt-1 mb-6 uppercase'>JAK ODPOWIEDNIO ROBIĆ ZDJĘCIA?</h1>
         </div>
         <div className=''>
-            <div className=' px-2 py-5'>
+            <div className=' sm:px-2 py-5'>
                 <h1 className=' text-2xl font-montserrat font-[600] ml-10'>ŹLE</h1>
                     <Carousel
                     swipeable={true}
@@ -95,7 +95,7 @@ const Gallery = () => {
                     </Carousel>
             </div>
 
-            <div className=' px-2 py-5'>
+            <div className=' sm:px-2 py-5'>
                 <h1 className=' text-2xl font-montserrat font-[600] ml-10'>DOBRZE</h1>
                     <Carousel
                     swipeable={true}

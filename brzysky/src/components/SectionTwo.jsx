@@ -23,8 +23,8 @@ const SectionTwo = () => {
             <h2 className=' font-montserrat text-xl font-[600] tracking-tight
                                 bg-gradient-to-r from-[#cacaca] to-[#222]
                                 inline-block text-transparent bg-clip-text uppercase'>Sumienność </h2>
-                <h1 className=' font-montserrat text-5xl font-[700] mt-1 mb-6 uppercase'>Sumienność</h1>
-                <p className=' font-inter font-[500] text-xl w-3/4 text-justify mb-8 mx-auto lg:mx-0'> To dla mnie nie tylko dokładność w wykonywaniu obowiązków, ale także zaangażowanie w zrozumienie potrzeb i oczekiwań klientów. Uważnie słucham, analizuję i proponuję rozwiązania, które najlepiej odpowiadają ich sytuacji.</p>
+                <h1 className=' font-montserrat  text-4xl sm:text-5xl font-[700] mt-1 mb-6 uppercase'>Sumienność</h1>
+                <p className=' font-inter font-[500] text-xl sm:w-3/4 text-justify mb-8 mx-auto lg:mx-0'> To dla mnie nie tylko dokładność w wykonywaniu obowiązków, ale także zaangażowanie w zrozumienie potrzeb i oczekiwań klientów. Uważnie słucham, analizuję i proponuję rozwiązania, które najlepiej odpowiadają ich sytuacji.</p>
             </div>
         </div>
 

@@ -12,7 +12,7 @@ const Offer = () => {
             title: 'Nowoczesny dom z potencjałem w Cieszanowie',
             price: '449 000 PLN',
             meters: '170 m2',
-            pricePerMeter: '2 641,18 PLN/m2'
+            pricePerMeter: '2 641,18 PLN / m2'
         },
         {
             image: 'https://homesell.pl/imgtmpv2/100/237/174/f398b434v1_c293035e695e5d35e0c2b7db4017abfb.jpg',
@@ -20,7 +20,7 @@ const Offer = () => {
             title: 'Nowoczesny dom z potencjałem w Cieszanowie',
             price: '449 000 PLN',
             meters: '170 m2',
-            pricePerMeter: '2 641,18 PLN/m2'
+            pricePerMeter: '2 641,18 PLN / m2'
         },
         {
             image: 'https://homesell.pl/imgtmpv2/100/237/174/f398b434v1_c293035e695e5d35e0c2b7db4017abfb.jpg',
@@ -28,7 +28,7 @@ const Offer = () => {
             title: 'Nowoczesny dom z potencjałem w Cieszanowie',
             price: '449 000 PLN',
             meters: '170 m2',
-            pricePerMeter: '2 641,18 PLN/m2'
+            pricePerMeter: '2 641,18 PLN / m2'
         },
         {
             image: 'https://homesell.pl/imgtmpv2/100/237/174/f398b434v1_c293035e695e5d35e0c2b7db4017abfb.jpg',
@@ -36,7 +36,7 @@ const Offer = () => {
             title: 'Nowoczesny dom z potencjałem w Cieszanowie',
             price: '449 000 PLN',
             meters: '170 m2',
-            pricePerMeter: '2 641,18 PLN/m2'
+            pricePerMeter: '2 641,18 PLN / m2'
         },
         {
             image: 'https://homesell.pl/imgtmpv2/100/237/174/f398b434v1_c293035e695e5d35e0c2b7db4017abfb.jpg',
@@ -44,7 +44,7 @@ const Offer = () => {
             title: 'Nowoczesny dom z potencjałem w Cieszanowie',
             price: '449 000 PLN',
             meters: '170 m2',
-            pricePerMeter: '2 641,18 PLN/m2'
+            pricePerMeter: '2 641,18 PLN / m2'
         },
     ]
 
@@ -54,13 +54,13 @@ const Offer = () => {
         <h2 className=' font-montserrat text-xl font-[600] tracking-tight
                                 bg-gradient-to-r from-[#cacaca] to-[#222]
                                 inline-block text-transparent bg-clip-text uppercase'>OFERTA </h2>
-                <h1 className=' font-montserrat text-5xl font-[700] mt-1 mb-6 uppercase'>MOJA OFERTA</h1>
+                <h1 className=' font-montserrat text-3xl md:text-5xl font-[700] mt-1 mb-6 uppercase'>MOJA OFERTA</h1>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {offer.map((offerElement, i)=>{
                 return(
                     <a target='blank' href='https://homesell.pl/dom-sprzedaz-170m2-449000pln-cieszanow-podkarpackie,10/15313/ODS'>
-                        <div className=' relative rounded-3xl font-montserrat font-[600] bg-[#f5f5f5] hover:bg-[#f0f0f0] group transition-all duration-150 cursor-default'>
+                        <div className=' relative rounded-3xl shadow-[0px_0px_10px_0px] shadow-black/20 font-montserrat font-[600] bg-[#f5f5f5] hover:bg-[#f0f0f0] group transition-all duration-150 cursor-default'>
                         <img src={offerElement.image} alt="" className=' aspect-video object-cover rounded-3xl relative group-hover:-mt-2 transition-all duration-150' />
 
                         <div className="p-5 pb-[50px] space-y-2">
