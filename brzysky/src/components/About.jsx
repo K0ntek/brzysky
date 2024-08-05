@@ -1,22 +1,32 @@
 import React from 'react'
-import Offer from './Offer'
 
 const About = () => {
   return (
-    <div className=' rounded-[40px] bg-zinc-950'>
-      <h1 className=' text-transparent bg-clip-text bg-gradient-to-r from-[#8b8b8b] to-[#eeeeee] text-lg uppercase py-5 font-mont tracking-wide text-center font-[600]'>Moja misja, twoja satysfakcja</h1>
-      <div className=' w-full mx-auto py-10 mt-8' id='about'>
-          <div className='w-5/6 py-7 mx-auto rounded-[40px] grid lg:grid-cols-2'>
-              <div className='hidden sm:block'>
-                <h1 className=' text-8xl font-mont font-[500] text-center text-transparent bg-clip-text bg-gradient-to-r from-[silver] to-[white] my-8 sticky hidden lg:block top-[50%] translate-y-[-50%]'>O MNIE</h1>
-              </div>
-                  <div>
-                    <h1 className=' text-center text-5xl font-mont mb-5 text-transparent bg-clip-text bg-gradient-to-r from-[silver] to-[white]'>POZNAJ MNIE BLIŻEJ !</h1>
-                    <p className=' text-2xl text-white text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cupiditate natus eos numquam placeat repellat recusandae reprehenderit, aliquid illum molestiae sunt maiores aliquam laborum, eligendi pariatur rerum sed enim veniam architecto sequi odit totam quam ea mollitia? Quibusdam, quo temporibus.</p>
-                    <Offer/>
-                  </div>
-          </div>
-    </div>
+    <div className=' relative aboutSection w-full shadow-[0px_0px_20px_0px] shadow-black/50 px-10 min-h-[500px] py-[80px] rounded-[40px] my-10'>
+        <div className=' text-white text-center rounded-[40px] py-10'>
+        <h2 className=' font-montserrat text-2xl font-[600] tracking-tight
+                                bg-gradient-to-r from-[#fff] to-[#a3a3a3]
+                                inline-block text-transparent bg-clip-text'>O MNIE</h2>
+            <h1 className=' font-montserrat text-5xl font-[600] mt-1 mb-6 uppercase'>Poznajmy się bliżej!</h1>
+            <div className=' -space-y-5'>
+              <p className=' mx-auto font-inter font-[500] text-xl w-3/4 text-justify mb-8'>
+                Nazywam się Piotr Brzyski i z pasją zajmuję się rynkiem nieruchomości. Jestem agentem,
+                który stawia na sumienność, profesjonalizm i precyzję w każdym aspekcie swojej pracy.
+                  Moim celem jest pomoc klientom w znalezieniu idealnego miejsca do życia lub inwestycji.</p>
+
+                    <p className=' mx-auto font-inter font-[500] text-xl w-3/4 text-justify mb-8 px-5'>
+                        Dążę do tego, aby każdy etap procesu – od pierwszego spotkania, przez negocjacje,
+                          aż po finalizację transakcji – przebiegał sprawnie i bezstresowo. Zawsze dbam o to,
+                          aby moi klienci czuli się pewnie i dobrze poinformowani.</p>
+            </div>
+            </div>
+
+            <div className=' absolute w-full flex mb-2 gap-2 text-white bottom-0'>
+                    <div className=' xl:w-[6%] md:w-[12%] w-[16%]'>
+                        <div className=" w-full bg-[#ff9352] rounded-full h-1 relative top-[50%] translate-y-[-50%]"></div>
+                    </div>
+                    <p className=' font-montserrat font-[600] w-4/6'>"Jeśli kochasz to, co robisz, nie przepracujesz ani jednego dnia w życiu"</p>
+                </div>
     </div>
   )
 }

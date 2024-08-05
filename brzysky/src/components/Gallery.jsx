@@ -15,11 +15,11 @@ const Gallery = () => {
           items: 3
         },
         tablet: {
-          breakpoint: { max: 1024, min: 464 },
+          breakpoint: { max: 1024, min: 700 },
           items: 2
         },
         mobile: {
-          breakpoint: { max: 464, min: 0 },
+          breakpoint: { max: 700, min: 0 },
           items: 1
         }
       };
@@ -61,11 +61,16 @@ const Gallery = () => {
     ]
 
   return (
-    <div className=' pt-10 bg-gradient-to-t' id='gallery'>
-        <h1 className=' text-transparent bg-clip-text bg-gradient-to-r from-[#000000] to-[#313131] text-lg uppercase text-center font-inter  mt-5'>JAK ODPOWIEDNIO ROBIĆ ZDJĘCIA? </h1>
+    <div className=' bg-[#e9e9e9] mt-10 p-6 rounded-[40px] text-[#000000] shadow-[0px_0px_20px_0px] shadow-black/40' id='gallery'>
+        <div className="mx-auto justify-center text-center">
+        <h2 className=' font-montserrat text-xl font-[600] tracking-tight
+                                bg-gradient-to-r from-[#999999] to-[#000000]
+                                inline-block text-transparent bg-clip-text uppercase'>GALERIA </h2>
+                <h1 className=' font-montserrat text-5xl font-[600] mt-1 mb-6 uppercase'>JAK ODPOWIEDNIO ROBIĆ ZDJĘCIA?</h1>
+        </div>
         <div className=''>
             <div className=' px-2 py-5'>
-                <h1 className=' text-3xl font-inter font-[500] py-2 ml-10'>ŹLE</h1>
+                <h1 className=' text-2xl font-montserrat font-[600] ml-10'>ŹLE</h1>
                     <Carousel
                     swipeable={true}
                     draggable={true}
@@ -82,7 +87,7 @@ const Gallery = () => {
                             return(
                                 <div key={i}>
                                     <div>
-                                        <img src={badPhoto.image} alt="badPhoto" className=' aspect-[9/11] sm:aspect-square lg:aspect-[12/9] object-cover p-1 my-4 rounded-[40px]' />
+                                        <img src={badPhoto.image} alt="badPhoto" className=' aspect-[9/11] sm:aspect-square lg:aspect-[13/9] object-cover p-1 my-4 rounded-3xl' />
                                     </div>
                                 </div>
                             )
@@ -91,7 +96,7 @@ const Gallery = () => {
             </div>
 
             <div className=' px-2 py-5'>
-                <h1 className=' text-3xl font-inter font-[500] py-2 ml-10'>DOBRZE</h1>
+                <h1 className=' text-2xl font-montserrat font-[600] ml-10'>DOBRZE</h1>
                     <Carousel
                     swipeable={true}
                     draggable={true}
@@ -104,10 +109,10 @@ const Gallery = () => {
                     containerClass="carousel-container"
                     className='z-[98]'
                     >
-                        {goodPhotos.map((badPhoto, i)=>{
+                        {goodPhotos.map((goodPhoto, i)=>{
                             return(
                                 <div key={i}>
-                                    <img src={badPhoto.image} alt={`badPhoto ${i+1}`} className=' aspect-[9/11] sm:aspect-square lg:aspect-[12/9]  object-cover p-1 my-4 rounded-[40px]' />
+                                    <img src={goodPhoto.image} alt={`goodPhoto ${i+1}`} className=' aspect-[9/11] sm:aspect-square lg:aspect-[13/9]  object-cover p-1 my-4 rounded-3xl' />
                                 </div>
                             )
                         })}

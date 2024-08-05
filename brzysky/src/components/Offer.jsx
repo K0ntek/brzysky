@@ -1,45 +1,105 @@
 import React from 'react'
-import { PiPuzzlePieceThin } from "react-icons/pi";
-import { VscWorkspaceTrusted } from "react-icons/vsc";
-import { GoGraph } from "react-icons/go";
+import { MdPushPin, MdArrowOutward} from "react-icons/md";
+import { PiMapPinAreaLight } from "react-icons/pi";
+import { LiaCoinsSolid } from "react-icons/lia";
 
 const Offer = () => {
 
-  const offerElements = [
-    {
-      name: 'WYDAJNOŚĆ',
-      icon: <PiPuzzlePieceThin />
-    },
-    {
-      name: 'PROFESJONALIZM',
-      icon: <GoGraph />
-    },
-    {
-      name: 'ZAUFANIE',
-      icon: <VscWorkspaceTrusted />
-    },
-  ]
+    const offer = [
+        {
+            image: 'https://homesell.pl/imgtmpv2/100/237/174/f398b434v1_c293035e695e5d35e0c2b7db4017abfb.jpg',
+            city: 'Cieszanów',
+            title: 'Nowoczesny dom z potencjałem w Cieszanowie',
+            price: '449 000 PLN',
+            meters: '170 m2',
+            pricePerMeter: '2 641,18 PLN/m2'
+        },
+        {
+            image: 'https://homesell.pl/imgtmpv2/100/237/174/f398b434v1_c293035e695e5d35e0c2b7db4017abfb.jpg',
+            city: 'Cieszanów',
+            title: 'Nowoczesny dom z potencjałem w Cieszanowie',
+            price: '449 000 PLN',
+            meters: '170 m2',
+            pricePerMeter: '2 641,18 PLN/m2'
+        },
+        {
+            image: 'https://homesell.pl/imgtmpv2/100/237/174/f398b434v1_c293035e695e5d35e0c2b7db4017abfb.jpg',
+            city: 'Cieszanów',
+            title: 'Nowoczesny dom z potencjałem w Cieszanowie',
+            price: '449 000 PLN',
+            meters: '170 m2',
+            pricePerMeter: '2 641,18 PLN/m2'
+        },
+        {
+            image: 'https://homesell.pl/imgtmpv2/100/237/174/f398b434v1_c293035e695e5d35e0c2b7db4017abfb.jpg',
+            city: 'Cieszanów',
+            title: 'Nowoczesny dom z potencjałem w Cieszanowie',
+            price: '449 000 PLN',
+            meters: '170 m2',
+            pricePerMeter: '2 641,18 PLN/m2'
+        },
+        {
+            image: 'https://homesell.pl/imgtmpv2/100/237/174/f398b434v1_c293035e695e5d35e0c2b7db4017abfb.jpg',
+            city: 'Cieszanów',
+            title: 'Nowoczesny dom z potencjałem w Cieszanowie',
+            price: '449 000 PLN',
+            meters: '170 m2',
+            pricePerMeter: '2 641,18 PLN/m2'
+        },
+    ]
 
   return (
-    <div className=' w-full mx-auto bg-zinc-950 py-10 mt-8' id='about'>
-          <div className='py-7 mx-auto rounded-[40px]'>
-              <h1 className=' text-5xl font-mont font-[400] text-center text-transparent bg-clip-text bg-gradient-to-r from-[#d6d6d6] to-[white] my-8'>CO OFERUJĘ ?</h1>
-              <div className="flex w-full flex-wrap mx-auto justify-center gap-4">
-                  {offerElements.map((element, i)=>{
-                    return(
-                      <div className=' w-[180px] aspect-square text-white text-center bg-[rgba(183,134,97,.1)] rounded-3xl'>
-                        {/* bg-[rgba(183,134,97,.05)] */}
-                          <div className=' relative top-[50%] translate-y-[-50%] space-y-5'>
-                              <div className="w-full mx-auto">
-                                <h1 className=' text-7xl justify-center mx-auto text-center w-fit text-[#b78661]'>{element.icon}</h1>
-                              </div>
-                              <h1 className=' text-xl'>{element.name}</h1>
-                          </div>
-                      </div>
-                    )
-                  })}
-              </div>
-          </div>
+    <div id='offer'>
+        <div className=' ml-10'>
+        <h2 className=' font-montserrat text-xl font-[600] tracking-tight
+                                bg-gradient-to-r from-[#cacaca] to-[#222]
+                                inline-block text-transparent bg-clip-text uppercase'>OFERTA </h2>
+                <h1 className=' font-montserrat text-5xl font-[700] mt-1 mb-6 uppercase'>MOJA OFERTA</h1>
+        </div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {offer.map((offerElement, i)=>{
+                return(
+                    <a target='blank' href='https://homesell.pl/dom-sprzedaz-170m2-449000pln-cieszanow-podkarpackie,10/15313/ODS'>
+                        <div className=' relative rounded-3xl font-montserrat font-[600] bg-[#f5f5f5] hover:bg-[#f0f0f0] group transition-all duration-150 cursor-default'>
+                        <img src={offerElement.image} alt="" className=' aspect-video object-cover rounded-3xl relative group-hover:-mt-2 transition-all duration-150' />
+
+                        <div className="p-5 pb-[50px] space-y-2">
+                                <div className="flex space-x-1">
+                                    <MdPushPin className=' relative top-1 text-[#ff9352]'/>
+                                    <h2 className=''>{offerElement.city}</h2>
+                                </div>
+
+                                <h1 className='text-xl'>{offerElement.title}</h1>
+                                <h2 className=' text-xl text-[#ff9352]'>{offerElement.price}</h2>
+
+                                <div className="grid grid-cols-2">
+                                    <div className=' flex space-x-1 justify-center'>
+                                        <PiMapPinAreaLight className=' relative top-1 text-[#ff9352]'/>
+                                        <h2 className=' text-center'>{offerElement.meters}</h2>
+                                    </div>
+
+                                    <div className=' flex space-x-1 justify-center'>
+                                        <LiaCoinsSolid className=' relative top-1 text-[#ff9352]'/>
+                                        <h2 className=' text-center'>{offerElement.pricePerMeter}</h2>
+                                    </div>
+                                </div>
+
+                                {/* <div className="mx-auto justify-center text-center">
+                                    <button className=' py-2 text-white bg-zinc-950 px-4 hover:tracking-widest hover:bg-[#ff9352] transition-all duration-150 group-hover:mt-2'>ZOBACZ</button>
+                                </div> */}
+
+                            <div className="absolute bottom-2 right-5">
+                                <div className=' flex group'>
+                                    <div className=' overflow-hidden'><p className=' text-[12px] relative left-[100%] group-hover:left-0 transition-all duration-150'>ZOBACZ</p></div>
+                                    <MdArrowOutward className=' text-2xl group-hover:text-[#ff9352] transition-all duration-150'/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                )
+            })}
+        </div>
     </div>
   )
 }

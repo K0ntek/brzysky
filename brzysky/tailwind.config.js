@@ -6,9 +6,10 @@ export default {
   ],
   theme: {
     fontFamily: {
+      montserrat: ['Montserrat'],
       inter: ['Inter'],
-      mont: ['Montserrat'],
     },
+    extend: {},
   },
   plugins: [],
 }

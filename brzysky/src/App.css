@@ -1,25 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body{
-    background: linear-gradient(20deg, #ffffff, rgb(248, 248, 248), rgb(243, 243, 243), rgb(248, 248, 248), #fff5f1);
-    /* background: white; */
+  background: linear-gradient(80deg, rgb(252, 252, 252), white, rgb(243, 243, 243), rgb(230, 230, 230));
 }
 
-.active{
-    color: #da5f27;
+.aboutSection {
+  background: linear-gradient(0deg, rgba(0, 0, 0,.9), rgba(0, 0, 0,.6)), url('https://images.unsplash.com/photo-1603696271883-b4495463cc2b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-attachment: fixed;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-input[type=number] {
-  -moz-appearance: textfield;
+.navElement .active {
+  color: #ff9352;
 }
 
 *::selection{
-  color:white;
-  background: #b78661;
+  background: #ff9352;
+  color: black;
 }
+

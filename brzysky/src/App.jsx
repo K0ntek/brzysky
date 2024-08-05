@@ -2,38 +2,39 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Navbar from './components/Navbar'
 import Header from './components/Header'
+import Navbar from './components/Navbar'
 import About from './components/About'
-import Offer from './components/Offer'
+import SectionTwo from './components/SectionTwo'
+import SectionThree from './components/SectionThree'
+import SectionFour from './components/SectionFour'
 import Contact from './components/Contact'
+import Pricing from './components/Pricing'
 import Footer from './components/Footer'
-import Report from './components/Report'
+import Lines from './components/Lines'
 import Gallery from './components/Gallery'
+import Offer from './components/Offer'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div>
+   <div>
+    {/* <Lines/> */}
+     <div className=' max-w-[1400px] mx-auto px-6 mb-10'>
       <Navbar/>
-      <div className="w-[90%] mx-auto">
-        <Header/>
-          {/* <div className=' grid lg:grid-cols-2 lg:gap-[1%] lg:w-[98%] mx-auto'> */}
-            <About/>
-            {/* <Offer/> */}
-          {/* </div> */}
-        <Gallery/>
+      <Header/>
+      <div className="about">
+      <About/>
+        <SectionTwo/>
+        <SectionThree/>
+        <SectionFour/>
       </div>
-
-      <div id="contact">
-        {/* className=' grid md:grid-cols-2' */}
-          <Contact/>
-          <Report/>
-      </div>
-
-      <Footer/>
+      <Offer/>
+      <Gallery/>
+      <Contact/>
     </div>
+    <Footer/>
+   </div>
   )
 }
 
